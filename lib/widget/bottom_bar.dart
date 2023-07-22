@@ -59,7 +59,7 @@ class BottomBar extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Copyright © 2020 | EXPLORE',
+                  'Jaydeep Koladiya',textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.blueGrey.shade300,
                     fontSize: 14,
@@ -117,7 +117,7 @@ class BottomBar extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Copyright © 2020 | EXPLORE',
+                  'Jaydeep Koladiya',
                   style: TextStyle(
                     color: Colors.blueGrey.shade300,
                     fontSize: 14,

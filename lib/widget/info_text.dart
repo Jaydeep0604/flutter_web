@@ -25,7 +25,7 @@ class InfoText extends StatelessWidget {
             text,
             style: TextStyle(
               color: Colors.blueGrey.shade100,
-              fontSize: 16,
+              fontSize: 16, 
             ),
           ),
         )

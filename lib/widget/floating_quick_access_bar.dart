@@ -102,7 +102,9 @@ class _FloatingQuickAccessBarState extends State<FloatingQuickAccessBar> {
                                 child: Text(
                                   items[pageIndex],
                                   style: TextStyle(
-                                      color: Colors.blueGrey, fontSize: 16),
+                                    color: Colors.blueGrey,
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ),
                             ],

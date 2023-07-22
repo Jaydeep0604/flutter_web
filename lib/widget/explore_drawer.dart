@@ -8,14 +8,36 @@ class ExploreDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.transparent,
       child: Container(
-        color: Colors.blueGrey.shade900,
+        decoration: BoxDecoration(
+          color: Colors.blueGrey.shade900.withOpacity(0.8),
+        ),
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 60,
+              ),
+              SizedBox(
+                child: Center(
+                  child: Text(
+                    "Indian Tourism",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.white, fontSize: 22),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 15.0, bottom: 5.0),
+                child: Divider(
+                  color: Colors.blueGrey.shade400,
+                  thickness: 2,
+                ),
+              ),
               InkWell(
                 onTap: () {},
                 child: Text(
@@ -69,7 +91,7 @@ class ExploreDrawer extends StatelessWidget {
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    'Copyright © 2020 | EXPLORE',
+                    'Jaydeep Koladiya',
                     style: TextStyle(
                       color: Colors.blueGrey.shade300,
                       fontSize: 14,

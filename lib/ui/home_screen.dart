@@ -6,7 +6,9 @@ import 'package:flutter_web/widget/explore_drawer.dart';
 import 'package:flutter_web/widget/featured_heading.dart';
 import 'package:flutter_web/widget/featured_tiles.dart';
 import 'package:flutter_web/widget/floating_quick_access_bar.dart';
+import 'package:flutter_web/widget/our_services_heading.dart';
 import 'package:flutter_web/widget/responsive.dart';
+import 'package:flutter_web/widget/services_tiles.dart';
 import 'package:flutter_web/widget/top_bar_contents.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -74,14 +76,26 @@ class _HomeScreenState extends State<HomeScreen> {
             Stack(
               children: [
                 Container(
-                  // image below the top bar
                   child: SizedBox(
                     height: screenSize.height * 0.45,
                     width: screenSize.width,
                     child: Image.asset(
-                      'assets/images/cover.jpg',
+                      'assets/images/south_america.jpg',
                       fit: BoxFit.cover,
                     ),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.transparent, Colors.black26],
+                      begin: Alignment.bottomCenter,
+                      end: Alignment.topCenter,
+                    ),
+                  ),
+                  child: SizedBox(
+                    height: screenSize.height * 0.45,
+                    width: screenSize.width,
                   ),
                 ),
                 Column(
@@ -103,6 +117,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             DestinationHeading(screenSize: screenSize),
             DestinationCarousel(),
+            OurServicesHeading(screenSize: screenSize),
+            ServicesTiles(screenSize: screenSize),
             SizedBox(height: screenSize.height / 10),
             BottomBar(),
           ],
