@@ -156,12 +156,17 @@ class FeaturedTileSmallSizeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return ServicesDetailScreen(
-            imgUrl: serviceDetailModel.imgUrl,
-            body: serviceDetailModel.body,
-          );
-        }));
+        Navigator.pushNamed(
+            context, ServicesDetailScreen.servicesDetailScreenUrl, arguments: {
+          'imgUrl': serviceDetailModel.imgUrl,
+          'body': serviceDetailModel.body
+        });
+
+        // Navigator.push(context, MaterialPageRoute(builder: (context) {
+        //   return ServicesDetailScreen(
+        //     serviceDetailModel: serviceDetailModel,
+        //   );
+        // }));
       },
       child: Row(
         children: [
@@ -214,12 +219,11 @@ class FeaturedTileBigSizeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return ServicesDetailScreen(
-            imgUrl: serviceDetailModel.imgUrl,
-            body: serviceDetailModel.body,
-          );
-        }));
+        Navigator.pushNamed(
+            context, ServicesDetailScreen.servicesDetailScreenUrl, arguments: {
+          'imgUrl': serviceDetailModel.imgUrl,
+          'body': serviceDetailModel.body
+        });
       },
       child: Column(
         children: [

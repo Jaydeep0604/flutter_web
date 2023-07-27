@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/model/service_detail_model.dart';
 import 'package:flutter_web/widget/responsive.dart';
 
 class ServicesDetailScreen extends StatefulWidget {
@@ -9,6 +10,7 @@ class ServicesDetailScreen extends StatefulWidget {
   });
   String? imgUrl;
   String? body;
+  static const String servicesDetailScreenUrl = '/home/services-detail-screen';
 
   @override
   State<ServicesDetailScreen> createState() => _ServicesDetailScreenState();

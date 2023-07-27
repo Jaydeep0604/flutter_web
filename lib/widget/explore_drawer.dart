@@ -39,7 +39,9 @@ class ExploreDrawer extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: Text(
                   'Login',
                   style: TextStyle(color: Colors.white, fontSize: 22),
@@ -53,7 +55,9 @@ class ExploreDrawer extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: Text(
                   'Sign Up',
                   style: TextStyle(color: Colors.white, fontSize: 22),
@@ -67,7 +71,9 @@ class ExploreDrawer extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: Text(
                   'Discover',
                   style: TextStyle(color: Colors.white, fontSize: 22),
@@ -81,7 +87,9 @@ class ExploreDrawer extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pop(context);
+                },
                 child: Text(
                   'Contact Us',
                   style: TextStyle(color: Colors.white, fontSize: 22),

@@ -12,7 +12,10 @@ import 'package:flutter_web/widget/services_tiles.dart';
 import 'package:flutter_web/widget/top_bar_contents.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({
+    super.key,
+  });
+  static const String homeScreenUrl = '/home';
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
