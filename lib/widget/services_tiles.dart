@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_web/model/service_detail_model.dart';
+import 'package:flutter_web/ui/services_detail_screen.dart';
 import 'package:flutter_web/widget/responsive.dart';
 
 class ServicesTiles extends StatelessWidget {
@@ -110,17 +113,11 @@ class ServicesTileSmallSizeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        //  Navigator.pushNamed(context, RoutesName.servicesDetailScreen,
-        //     arguments: {
-        //       'imgUrl': serviceDetailModel.imgUrl,
-        //       'body': serviceDetailModel.body
-        //     });
-        // Navigator.push(context, MaterialPageRoute(builder: (context) {
-        //   return ServicesDetailScreen(
-        //     imgUrl: serviceDetailModel.imgUrl,
-        //     body: serviceDetailModel.body,
-        //   );
-        // }));
+        Navigator.pushNamed(
+            context, ServicesDetailScreen.servicesDetailScreenUrl, arguments: {
+          'imgUrl': serviceDetailModel.imgUrl,
+          'body': serviceDetailModel.body
+        });
       },
       child: Container(
         height: screenSize.width / 2.3,
@@ -180,17 +177,11 @@ class ServiceTileBigSizeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        //  Navigator.pushNamed(context, RoutesName.servicesDetailScreen,
-        //     arguments: {
-        //       'imgUrl': serviceDetailModel.imgUrl,
-        //       'body': serviceDetailModel.body
-        //     });
-        // Navigator.push(context, MaterialPageRoute(builder: (context) {
-        //   return ServicesDetailScreen(
-        //     imgUrl: serviceDetailModel.imgUrl,
-        //     body: serviceDetailModel.body,
-        //   );
-        // }));
+        Navigator.pushNamed(
+            context, ServicesDetailScreen.servicesDetailScreenUrl, arguments: {
+          'imgUrl': serviceDetailModel.imgUrl,
+          'body': serviceDetailModel.body
+        });
       },
       child: Column(
         children: [

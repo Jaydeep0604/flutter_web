@@ -10,6 +10,7 @@ import 'package:flutter_web/widget/our_services_heading.dart';
 import 'package:flutter_web/widget/responsive.dart';
 import 'package:flutter_web/widget/services_tiles.dart';
 import 'package:flutter_web/widget/top_bar_contents.dart';
+// import 'package:http/http.dart' as http; 
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -22,24 +23,32 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<bool> _isHovering = [false, false, false, false];
-  final ScrollController _scrollController = ScrollController();
-  // ignore: unused_field
+ final ScrollController _scrollController = ScrollController();
   double _scrollPosition = 0;
-  // ignore: unused_field
   double _opacity = 0;
 
-  _scrollListener() {
-    setState(() {
-      _scrollPosition = _scrollController.position.pixels;
-    });
-  }
+//   List<dynamic> userData = [];
+//   _scrollListener() {
+//     setState(() {
+//       _scrollPosition = _scrollController.position.pixels;
+//     });
+//   }
+//   Future<void> fetchUserData() async {
+//     final response = await http.post(Uri.parse("http://127.0.0.1:3000/findAll"));
+//     if (response.statusCode == 200) {
+//       setState(() {
+//         userData = json.decode(response.body)["userDetailList"];
+//       });
+//     }
+//   }
+//   @override
+//   void initState() {
+//     _scrollController.addListener(_scrollListener);
+//     fetchUserData();  // Call the API to fetch user data
+//     super.initState();
+//   }
 
-  @override
-  void initState() {
-    _scrollController.addListener(_scrollListener);
-    super.initState();
-  }
+
 
   @override
   Widget build(BuildContext context) {

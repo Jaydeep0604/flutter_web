@@ -162,11 +162,7 @@ class FeaturedTileSmallSizeWidget extends StatelessWidget {
           'body': serviceDetailModel.body
         });
 
-        // Navigator.push(context, MaterialPageRoute(builder: (context) {
-        //   return ServicesDetailScreen(
-        //     serviceDetailModel: serviceDetailModel,
-        //   );
-        // }));
+  
       },
       child: Row(
         children: [

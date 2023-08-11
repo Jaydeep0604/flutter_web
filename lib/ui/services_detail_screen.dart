@@ -10,7 +10,7 @@ class ServicesDetailScreen extends StatefulWidget {
   });
   String? imgUrl;
   String? body;
-  static const String servicesDetailScreenUrl = '/home/services-detail-screen';
+  static const String servicesDetailScreenUrl = '/home/detail-screen';
 
   @override
   State<ServicesDetailScreen> createState() => _ServicesDetailScreenState();
