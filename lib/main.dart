@@ -1,7 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_web/navigator/routes.dart';
-import 'package:flutter_web/ui/home_screen.dart';
-import 'package:flutter_web/ui/services_detail_screen.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
